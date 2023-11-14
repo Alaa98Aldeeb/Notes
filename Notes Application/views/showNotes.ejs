@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+    <link rel="stylesheet" href="../assets/CSS/showNotes.css">
+    <title>Notes List</title>
+</head>
+<body>
+
+    <form action="/showNotes" method="post">
+        <button><a href="/home">back to home page</a></button>
+        <input type="submit" value="delete all notes">
+    </form>
+
+    <% data.forEach(function (note) { %>
+        <table class="note-item">
+            <tr>
+                <td class="left"><h1><%= note.noteTitle %></h1></td>
+                <td class="right">
+                    <button class="showNoteItem"><a href="/noteDetails?id=<%= note._id %>">show</a></button>
+                    <button class="updateNoteItem"><a href="/updateNote?id=<%= note._id %>">update</a></button>
+                    <button class="deleteNoteItem"><a href="/deleteNote?id=<%= note._id %>">delete</a></button>
+                </td>
+            </tr>
+        </table>
+
+    <% }) %>
+</body>
+</html>

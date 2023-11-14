@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+body{
+    background-color: #1a1919
+}
+form{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+form a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+form button, form input{
+    padding: 8px;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+form button{
+    margin-right: 20px;
+    background-color: #a59a00;
+}
+form input{
+    background-color: rgb(145, 8, 8);
+}
+form input:hover{
+    cursor: pointer;
+}
+/* .note-item div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.note-item .note-title{
+    float: left;
+}
+.note-item .note-action{
+    float: right;
+} */
+table{
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:10px;
+}
+table .left{
+    float: left;
+    margin-left: 30px;
+}
+table .right{
+    float: right;
+    margin-right: 30px;
+}
+table tr{
+    background-color: #0f0f0f;
+    padding: 10px;
+}
+td{
+    /* align-content: center; */
+    padding: 10px;
+}
+table .right button{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    margin-left: 8px;
+}
+table .right button a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+}
+table .right button:nth-child(1){
+    background-color: #1a80af;
+}
+table .right button:nth-child(2){
+    background-color: #af511a;
+}
+table .right button:nth-child(3){
+    background-color: rgb(145, 8, 8);
+}
+table .left h1{
+    color: #eee7e7;
+}

@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+    <link rel="stylesheet" href="../assets/CSS/noteDetails.css">
+    <title>Note Details</title>
+</head>
+
+<body>
+    <% noteItem.forEach(function (note){ %>
+        <div>
+            <h1>
+                <%= note.noteTitle %>
+            </h1>
+            <p>
+                <%= note.noteContent %>
+            </p>
+    </div>
+    <% }) %>
+    <button><a href="/showNotes">back to notes list</a></button>
+
+</body>
+
+</html>
